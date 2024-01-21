@@ -5,11 +5,10 @@ import java.util.Scanner;
 
 public class Game {
 
-    private Scanner scan = new Scanner(System.in);
+    private static final Scanner scan = new Scanner(System.in);
     private byte winner = 0;
-    private char [] box = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+    private final char [] box = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
-    private char [][] board = new char [3][3];
 
     public void start() {
         System.out.println("Enter box number to select. Enjoy!\n");
